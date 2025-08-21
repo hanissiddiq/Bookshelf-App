@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+header {
+  text-align: center;
+  background-color: darkslateblue;
+  padding: 10px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+main section {
+  background-color: darkslateblue;
+  outline: 2px solid lime;
+  padding: 20px;
+  color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+main section:nth-child(1) > h2 {
+  text-align: center;
+}
+
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#bookForm div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+}
+
+#bookForm div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+#bookFormSubmit {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+
+  background-color: lime;
+  font-weight: bold;
+}
+
+#searchBook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#searchBook input {
+  width: 70%;
+  height: 30px;
+  border-radius: 7px;
+}
+
+#searchBook button {
+  width: 30%;
+  height: 30px;
+  background-color: lime;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+#incompleteBookList,
+#completeBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.book-item {
+  outline: 2px solid lime;
+  padding: 5px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.book-item button:nth-child(1) {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 5px;
+}
+.book-item button:nth-child(2) {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 5px;
+}
+.book-item button:nth-child(3) {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  main section {
+    width: 90%;
+  }
+
+  #bookFormSubmit {
+    height: 50px;
+  }
+}
